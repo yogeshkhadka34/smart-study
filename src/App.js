@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
+import About from './pages/about/About';
+import Contact from './pages/contact/Contact';
+import Features from './pages/features/Features';
+import Footer from './pages/footer/Footer';
+import Header from './pages/header/Header';
+import Resources from './pages/resources/Resources';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Loksewa Smart Study</h2>
+      <Header></Header>
+      <Features></Features>
+      <About></About>
+      <Resources></Resources>
+      <Contact></Contact>
+      <Footer></Footer>
     </div>
   );
 }
