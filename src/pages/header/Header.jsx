@@ -7,15 +7,15 @@ const Header = () => {
   return (
     <div className="gradient__bg header">
       {/* Markup for Navigation Bar */}
-      <div className="header__navbar">
+      <div className="header__navbar  section__margin section__padding">
         <Navbar></Navbar>
       </div>
 
-      <div className="header__heroarea">
+      <div className="header__heroarea  section__margin section__padding">
         {/* Markup for Heroarea Left Section */}
         <div className="header__heroarea-container">
           {/* Title and Description */}
-          <div className="header__heroarea-title">
+          <div className="header__heroarea-title gradient__text">
             <h1>A complete digital platform for your aspirations</h1>
           </div>
           <div className="header__heroarea-content">
@@ -28,9 +28,13 @@ const Header = () => {
 
           {/* Get Started button section */}
           <div className="header__heroarea-form">
-            <label>Subscribe to Stay Updated</label>
-            <input type="text" />
-            <button>Subscribe</button>
+            <label>
+              <span className="gradient__text">Subscribe to Stay </span> Updated
+            </label>
+            <div className="header__heroarea-form_input">
+              <input type="text" placeholder="Your email here" />
+              <button>Subscribe</button>
+            </div>
           </div>
         </div>
 

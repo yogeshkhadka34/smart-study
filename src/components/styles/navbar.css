@@ -1,3 +1,75 @@
+/* Navbar container styles */
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: unset;
+}
+
+/* Navbar Logo styles */
+.navbar__logo{
+    flex: 3;
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: 3rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+.navbar__logo span{
+    color: var(--color-subtext);
+}
+
+/* Navbar links */
+.navbar__links{
+    flex: 8;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navbar__links a{
+    color: var(--color-white);
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 1rem;
+}
+
+.navbar__links a:hover,
+.navbar__sign a:hover{
+    color: var(--color-subtext);
+}
+
+/* Navbar sign in buttons and login */
+.navbar__sign{
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navbar__sign a,
+.navbar__sign button{
+    color: var(--color-white);
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 500;
+}
+.navbar__sign a{
+    padding-right: 1rem;
+}
+.navbar__sign button{
+    background-color: var(--color-subtext);
+    padding: 3px 1rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Navbar Mobile Menu styles */
+.navbar__menu{
+    display: none;
+}
+
 .navbar__menu svg{
     cursor: pointer;
 }

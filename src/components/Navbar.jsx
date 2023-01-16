@@ -32,12 +32,14 @@ const Navbar = () => {
   return (
     <div className="navbar__container">
       {/* Company Logo */}
-      <div className="navbar__logo">
-        Loksewa <span>Study</span>{" "}
+      <div className="navbar__logo gradient__text">
+        <h1>Smart Study</h1>
       </div>
 
       {/* Navbar links */}
-      <Menu className="navbar__links"></Menu>
+      <div className="navbar__links">
+        <Menu></Menu>
+      </div>
 
       {/* Navbar Login and Sign up buttons */}
       <div className="navbar__sign">
