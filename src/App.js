@@ -10,7 +10,6 @@ import Resources from './pages/resources/Resources';
 function App() {
   return (
     <div className="App">
-      <h2>Loksewa Smart Study</h2>
       <Header></Header>
       <Features></Features>
       <About></About>
