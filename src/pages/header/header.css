@@ -19,7 +19,8 @@
 }
 
 .header__heroarea-title{
-    padding: 2rem 0.5rem 2rem 0;
+    padding: 2rem 1rem 2rem 0;
+    margin-top: 2rem;
 }
 .header__heroarea-title h1{
     font-size: 2.5rem;
@@ -49,7 +50,7 @@
     font-size: 1.2rem;
     line-height: 2rem;
     font-weight: 800;
-    color: var(--color-white);
+    color: #fff;
     font-family: var(--font-family);
     padding-top: 2rem;
     padding-bottom: 1rem;
@@ -57,13 +58,15 @@
 .header__heroarea-form input{
     background-color: var(--color-footer);
     border: none;
-    padding: 3px 1rem;
+    padding: 0 1rem;
+    margin-top: 5px;
     color: var(--color-white);
 }
 .header__heroarea-form button{
     background-color: var(--color-subtext);
     border: none;
-    padding: 3px 2rem;
+    padding: 0 2rem;
+    margin-top: 5px;
     color: var(--color-white);
     font-weight: 500;
     border-radius: 0 5px 5px 0;
@@ -72,8 +75,8 @@
 
 /* Heroarea hero image section */
 .header__heroarea-image img{
-    height: 30rem;
-    width: 30rem;
+    height: 40rem;
+    width: 40rem;
     animation: updown 3s ease infinite;
 }
 @keyframes updown {
@@ -88,4 +91,184 @@
     100% {
         transform: translateY(0px);
     }
+}
+
+/* @media (max-aspect-ratio: 1/2){
+    .header__heroarea{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+} */
+
+/* Extra large screen resizing to large screens */
+@media only screen and (max-width: 1500px){
+    .header__heroarea-image img {
+        height: 35rem;
+        width: 35rem;
+    }
+    .header__heroarea-title{
+        margin-top: 1rem;
+    }
+}
+
+/* Mid and large laptop screens */
+@media only screen and (max-width: 1280px) {
+    .header__heroarea-image img {
+        height: 30rem;
+        width: 30rem;
+    }
+    .header__heroarea-title{
+        margin-top: 0;
+    }
+
+}
+
+/* Small laptops screen which have landscape orientation*/
+@media only screen and (max-width: 992px) and (orientation: landscape){
+    .header__navbar{
+        margin-bottom: unset;
+    }
+    .header__heroarea-image img {
+            height: 25rem;
+            width: 25rem;
+            margin-top: 2rem;
+    }
+    .header__heroarea-title {
+        padding: 1rem 1rem 1rem 0;
+    }
+
+    .header__heroarea-title h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .header__heroarea-content p,
+    .header__heroarea-form input,
+    .header__heroarea-form button {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+/* Tablets with portrait orientation */
+@media only screen and (max-width: 992px) and (orientation: portrait) {
+    .header__heroarea {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .header__heroarea-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .header__heroarea-image img {
+        height: 25rem;
+        width: 25rem;
+        margin-top: 2rem;
+    }
+
+    .header__heroarea-title {
+        padding: 1rem 1rem 1rem 0;
+    }
+
+    .header__heroarea-title h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .header__heroarea-content p,
+    .header__heroarea-form input,
+    .header__heroarea-form button {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .header__heroarea{
+        margin-top: unset;
+        padding-top: unset;
+    }
+    .header__heroarea-image img {
+        height: 16rem;
+        width: 16rem;
+    }
+    .header__heroarea-title {
+        padding: 12px 12px 12px 0;
+    }
+
+    .header__heroarea-title h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .header__heroarea-content p,
+    .header__heroarea-form input,
+    .header__heroarea-form button {
+        font-size: 12px;
+        line-height: 1rem;
+    }
+}
+
+/* Potrait orientation with desktop widths i.e. for desktop modes in Mobile phones */
+/* @media screen and (min-width: 481px) and (orientation: portrait) {
+    .header{
+        height: 30vh;
+    }
+} */
+
+/* Mediascreen for Mobile phones */
+@media only screen and (max-width: 480px){
+    .header__navbar{
+        margin-top: unset;
+    }
+    .header__heroarea {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+        text-align: center;
+    }
+    .header__heroarea-image img {
+        height: 18rem;
+        width: 18rem;
+    }
+    .header__heroarea-title {
+        padding: 0.5rem 1rem 1rem 0;
+    }
+
+    .header__heroarea-title h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: #fff;
+    }
+
+    .header__heroarea-content p,
+    .header__heroarea-form input,
+    .header__heroarea-form button {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .header__heroarea-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+        text-align: center;
+       
+    }
+    .header__heroarea-form input{
+        padding: 5px 1rem;
+        border-radius: 6px;
+    }
+    .header__heroarea-form button{
+        padding: 5px 10px;
+    }
+
 }

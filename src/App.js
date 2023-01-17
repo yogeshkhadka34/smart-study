@@ -1,5 +1,6 @@
 
 import './App.css';
+import ComponentWithDimensions from './components/ComponentWithDimensions';
 import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
 import Features from './pages/features/Features';
@@ -12,6 +13,7 @@ function App() {
     <div className="App">
       <Header></Header>
       <Features></Features>
+      <ComponentWithDimensions></ComponentWithDimensions>
       <About></About>
       <Resources></Resources>
       <Contact></Contact>

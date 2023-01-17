@@ -29,7 +29,7 @@ const Header = () => {
           {/* Get Started button section */}
           <div className="header__heroarea-form">
             <label>
-              <span className="gradient__text">Subscribe to Stay </span> Updated
+              <span className="gradient__text">Subscribe to Stay Updated</span>
             </label>
             <div className="header__heroarea-form_input">
               <input type="text" placeholder="Your email here" />
