@@ -10,6 +10,9 @@
     align-items: flex-start;
 }
 
+.header__heroarea-image{
+    aspect-ratio: 1/1;
+}
 /* Heroarea title,content and forms settings */
 .header__heroarea-container{
     display: flex;
@@ -75,8 +78,8 @@
 
 /* Heroarea hero image section */
 .header__heroarea-image img{
-    height: 40rem;
-    width: 40rem;
+    width: 100%;
+    height: 100%;
     animation: updown 3s ease infinite;
 }
 @keyframes updown {
@@ -126,7 +129,7 @@
 }
 
 /* Small laptops screen which have landscape orientation*/
-@media only screen and (max-width: 992px) and (orientation: landscape){
+@media only screen and (max-width: 992px) {
     .header__navbar{
         margin-bottom: unset;
     }
@@ -151,7 +154,7 @@
     }
 }
 
-/* Tablets with portrait orientation */
+/* Tablets with portrait orientation
 @media only screen and (max-width: 992px) and (orientation: portrait) {
     .header__heroarea {
         display: flex;
@@ -188,7 +191,7 @@
         font-size: 1rem;
         line-height: 1.5rem;
     }
-}
+} */
 
 @media only screen and (max-width: 768px){
     .header__heroarea{
